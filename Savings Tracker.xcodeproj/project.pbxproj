@@ -21,6 +21,12 @@
 		4BA28E8627419ED200F0FD5B /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA28E5827419ED100F0FD5B /* Persistence.swift */; };
 		4BA28E8727419ED200F0FD5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BA28E5927419ED200F0FD5B /* Assets.xcassets */; };
 		4BA28E8827419ED200F0FD5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BA28E5927419ED200F0FD5B /* Assets.xcassets */; };
+		4BA28E9E2741A2D200F0FD5B /* Bucket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA28E9C2741A1DF00F0FD5B /* Bucket.swift */; };
+		4BA28E9F2741A2D300F0FD5B /* Bucket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA28E9C2741A1DF00F0FD5B /* Bucket.swift */; };
+		4BA28EA02741A2D600F0FD5B /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA28E9A2741A1DF00F0FD5B /* Transaction.swift */; };
+		4BA28EA12741A2D600F0FD5B /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA28E9A2741A1DF00F0FD5B /* Transaction.swift */; };
+		4BA28EA32741A3C700F0FD5B /* App+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA28EA22741A3C700F0FD5B /* App+Helpers.swift */; };
+		4BA28EA42741A3C700F0FD5B /* App+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA28EA22741A3C700F0FD5B /* App+Helpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +61,11 @@
 		4BA28E7727419ED200F0FD5B /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BA28E7B27419ED200F0FD5B /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		4BA28E7D27419ED200F0FD5B /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+		4BA28E972741A09500F0FD5B /* Savings Tracker (iOS).entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Savings Tracker (iOS).entitlements"; sourceTree = "<group>"; };
+		4BA28E982741A0DE00F0FD5B /* Savings Tracker (iOS)Release.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Savings Tracker (iOS)Release.entitlements"; sourceTree = "<group>"; };
+		4BA28E9A2741A1DF00F0FD5B /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		4BA28E9C2741A1DF00F0FD5B /* Bucket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bucket.swift; sourceTree = "<group>"; };
+		4BA28EA22741A3C700F0FD5B /* App+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App+Helpers.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +103,8 @@
 		4BA28E4E27419ED100F0FD5B = {
 			isa = PBXGroup;
 			children = (
+				4BA28E982741A0DE00F0FD5B /* Savings Tracker (iOS)Release.entitlements */,
+				4BA28E972741A09500F0FD5B /* Savings Tracker (iOS).entitlements */,
 				4BA28E5327419ED100F0FD5B /* Shared */,
 				4BA28E6527419ED200F0FD5B /* macOS */,
 				4BA28E6E27419ED200F0FD5B /* Tests iOS */,
@@ -103,11 +116,13 @@
 		4BA28E5327419ED100F0FD5B /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				4BA28E9D2741A28B00F0FD5B /* Models */,
 				4BA28E5627419ED100F0FD5B /* Savings_TrackerApp.swift */,
 				4BA28E5727419ED100F0FD5B /* ContentView.swift */,
 				4BA28E5827419ED100F0FD5B /* Persistence.swift */,
 				4BA28E5927419ED200F0FD5B /* Assets.xcassets */,
 				4BA28E5427419ED100F0FD5B /* Savings_Tracker.xcdatamodeld */,
+				4BA28EA22741A3C700F0FD5B /* App+Helpers.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -147,6 +162,15 @@
 				4BA28E7D27419ED200F0FD5B /* Tests_macOSLaunchTests.swift */,
 			);
 			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		4BA28E9D2741A28B00F0FD5B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4BA28E9A2741A1DF00F0FD5B /* Transaction.swift */,
+				4BA28E9C2741A1DF00F0FD5B /* Bucket.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -307,9 +331,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BA28EA32741A3C700F0FD5B /* App+Helpers.swift in Sources */,
 				4BA28E8127419ED200F0FD5B /* Savings_TrackerApp.swift in Sources */,
 				4BA28E8527419ED200F0FD5B /* Persistence.swift in Sources */,
+				4BA28EA02741A2D600F0FD5B /* Transaction.swift in Sources */,
 				4BA28E7F27419ED200F0FD5B /* Savings_Tracker.xcdatamodeld in Sources */,
+				4BA28E9E2741A2D200F0FD5B /* Bucket.swift in Sources */,
 				4BA28E8327419ED200F0FD5B /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -318,9 +345,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BA28EA42741A3C700F0FD5B /* App+Helpers.swift in Sources */,
 				4BA28E8227419ED200F0FD5B /* Savings_TrackerApp.swift in Sources */,
 				4BA28E8627419ED200F0FD5B /* Persistence.swift in Sources */,
+				4BA28EA12741A2D600F0FD5B /* Transaction.swift in Sources */,
 				4BA28E8027419ED200F0FD5B /* Savings_Tracker.xcdatamodeld in Sources */,
+				4BA28E9F2741A2D300F0FD5B /* Bucket.swift in Sources */,
 				4BA28E8427419ED200F0FD5B /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -475,6 +505,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Savings Tracker (iOS).entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7YJARMBCB3;
@@ -505,6 +536,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Savings Tracker (iOS)Release.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7YJARMBCB3;
